@@ -32,7 +32,7 @@
 		<dependency>
 			<groupId>com.vmlens</groupId>
 			<artifactId>annotation</artifactId>
-			<version>1.0.2</version>
+			<version>1.0.3</version>
 			<scope>test</scope>
 		</dependency>
 			
@@ -57,11 +57,12 @@
 			<plugin>
 				<groupId>com.vmlens</groupId>
 				<artifactId>interleave</artifactId>
-				<version>1.0.4</version>
+				<version>1.0.8</version>
 				<configuration>
 					<trimStackTrace>false</trimStackTrace>
 					<includes>
-						<include>com.vmlens.tutorialAtomicReference.ConcurrencyTestUpdateState</include>
+						<include>com.vmlens.tutorialAtomicReference.TestNotThreadSafe</include>
+						<include>com.vmlens.tutorialAtomicReference.TestThreadSafe</include>
 					</includes>
 				</configuration>
 				<executions>
